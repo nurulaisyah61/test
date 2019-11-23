@@ -18,12 +18,12 @@ export class Input extends React.Component {
 	}
 
 	render(){
-		const { placeholder, type } = this.props;
+		const { placeholder, icon } = this.props;
 		const { value } = this.state;
 
 		return (
 			<Wrapper>
-				{type === 'search' && <i class="fa fa-search icon" />}
+				<i className={`fa fa-${icon} icon`} />
 				<input value={value} placeholder={placeholder} onChange={this.handleChange} />
 			</Wrapper>
 		);

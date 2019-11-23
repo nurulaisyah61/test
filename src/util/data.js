@@ -1,12 +1,142 @@
-const data = [
-  {
-    name: 'Salamah',
-    from: 'BNI',
-    to: 'BRI',
-    amount: 'Rp2.500.000',
-    date: '5 Agustus 2019',
-    status: 'berhasil'
-  }
-]
-
-export default data;
+export const data = {
+	"FT43344":{
+		"id":"FT43344",
+		"amount":2652672,
+		"unique_code":146,
+		"status":"SUCCESS",
+		"sender_bank":"bni",
+		"account_number":"4061293582",
+		"beneficiary_name":"Sammy-Jo Mccall",
+		"beneficiary_bank":"mandiri",
+		"remark":"sample remark",
+		"created_at":"2019-11-23 13:20:32",
+		"completed_at":"2019-11-23 13:20:32",
+		"fee":0
+	},
+	"FT7671":{
+		"id":"FT7671",
+		"amount":1247066,
+		"unique_code":724,
+		"status":"PENDING",
+		"sender_bank":"bni",
+		"account_number":"3064370696",
+		"beneficiary_name":"Jake Castillo",
+		"beneficiary_bank":"bsm",
+		"remark":"sample remark",
+		"created_at":"2019-11-23 13:19:32",
+		"completed_at":"2019-11-23 13:20:32",
+		"fee":0
+	},
+	"FT6182":{
+		"id":"FT6182",
+		"amount":1467480,
+		"unique_code":51,
+		"status":"SUCCESS",
+		"sender_bank":"bni",
+		"account_number":"3241949947",
+		"beneficiary_name":"Sufyan Kramer",
+		"beneficiary_bank":"bca",
+		"remark":"sample remark",
+		"created_at":"2019-11-23 13:18:32",
+		"completed_at":"2019-11-23 13:20:32",
+		"fee":0
+	},
+	"FT55121":{
+		"id":"FT55121",
+		"amount":3620496,
+		"unique_code":730,
+		"status":"SUCCESS",
+		"sender_bank":"bni",
+		"account_number":"6868185032",
+		"beneficiary_name":"Sufyan Kramer",
+		"beneficiary_bank":"bri",
+		"remark":"sample remark",
+		"created_at":"2019-11-23 13:17:32",
+		"completed_at":"2019-11-23 13:20:32",
+		"fee":0
+	},
+	"FT82900":{
+		"id":"FT82900",
+		"amount":4818743,
+		"unique_code":764,
+		"status":"SUCCESS",
+		"sender_bank":"bni",
+		"account_number":"5716112413",
+		"beneficiary_name":"Sammy-Jo Mccall",
+		"beneficiary_bank":"mandiri",
+		"remark":"sample remark",
+		"created_at":"2019-11-23 13:16:32",
+		"completed_at":"2019-11-23 13:20:32",
+		"fee":0
+	},
+	"FT87734":{
+		"id":"FT87734",
+		"amount":4009732,
+		"unique_code":612,
+		"status":"SUCCESS",
+		"sender_bank":"bni",
+		"account_number":"2830555137",
+		"beneficiary_name":"Beck Glover",
+		"beneficiary_bank":"muamalat",
+		"remark":"sample remark",
+		"created_at":"2019-11-23 13:15:32",
+		"completed_at":"2019-11-23 13:20:32",
+		"fee":0
+	},
+	"FT78839":{
+		"id":"FT78839",
+		"amount":3312469,
+		"unique_code":556,
+		"status":"SUCCESS",
+		"sender_bank":"bni",
+		"account_number":"178096645",
+		"beneficiary_name":"Rhiannan Simmons",
+		"beneficiary_bank":"muamalat",
+		"remark":"sample remark",
+		"created_at":"2019-11-23 13:14:32",
+		"completed_at":"2019-11-23 13:20:32",
+		"fee":0
+	},
+	"FT54169":{
+		"id":"FT54169",
+		"amount":4065392,
+		"unique_code":808,
+		"status":"SUCCESS",
+		"sender_bank":"bni",
+		"account_number":"2849722025",
+		"beneficiary_name":"Selin Dawe",
+		"beneficiary_bank":"mandiri",
+		"remark":"sample remark",
+		"created_at":"2019-11-23 13:13:32",
+		"completed_at":"2019-11-23 13:20:32",
+		"fee":0
+	},
+	"FT93396":{
+		"id":"FT93396",
+		"amount":1769634,
+		"unique_code":660,
+		"status":"SUCCESS",
+		"sender_bank":"bni",
+		"account_number":"1085147649",
+		"beneficiary_name":"Rhiannan Simmons",
+		"beneficiary_bank":"muamalat",
+		"remark":"sample remark",
+		"created_at":"2019-11-23 13:12:32",
+		"completed_at":"2019-11-23 13:20:32",
+		"fee":0
+	},
+	"FT94968":{
+		"id":"FT94968",
+		"amount":110372,
+		"unique_code":147,
+		"status":"SUCCESS",
+		"sender_bank":"bni",
+		"account_number":"5665957033",
+		"beneficiary_name":"Sammy-Jo Mccall",
+		"beneficiary_bank":"bsm",
+		"remark":"sample remark",
+		"created_at":"2019-11-23 13:11:32",
+		"completed_at":"2019-11-23 13:20:32",
+		"fee":0
+	}
+	}

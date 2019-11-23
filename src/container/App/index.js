@@ -1,13 +1,27 @@
 import React from 'react';
 import { Wrapper } from './Wrapper';
 import { Input } from '../../component/Input';
+import { data } from '../../util/data'
 
 class App extends React.Component {
   constructor() {
     super();
     this.state ={
-      value: ''
+      value: '',
+      items: []
     }
+  }
+
+  componentDidMount(){
+    const keys = Object.keys(data);
+    const items = keys.map( k => {
+      return data[k]
+    })
+
+    this.setState({
+      items: items
+    })
+    
   }
 
   onSearch = (event) => {
@@ -17,16 +31,17 @@ class App extends React.Component {
   }
 
   render(){
-    const { value } = this.state;
+    const { value, items } = this.state;
 
     return (
       <Wrapper>
         <Input 
-          type='search' 
+          icon='search' 
           onChange={this.onSearch} 
           placeholder='Cari nama' 
           value={value} 
         />
+        
       </Wrapper>
     );
   }
