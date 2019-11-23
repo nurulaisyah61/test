@@ -2,6 +2,7 @@ import React from 'react';
 import { Wrapper } from './Wrapper';
 import { Input } from '../../component/Input';
 import { data } from '../../util/data'
+import ListItem from '../../component/ListItem';
 
 class App extends React.Component {
   constructor() {
@@ -41,7 +42,7 @@ class App extends React.Component {
           placeholder='Cari nama' 
           value={value} 
         />
-        
+        <ListItem items={items} />
       </Wrapper>
     );
   }
