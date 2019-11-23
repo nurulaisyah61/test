@@ -3,11 +3,6 @@ import { Wrapper } from './Wrapper';
 import Item from '../Item';
 
 class ListItem extends React.Component {
-  constructor(props) {
-    super(props);
-    
-  }
-
   render(){
     const { items } = this.props;
 

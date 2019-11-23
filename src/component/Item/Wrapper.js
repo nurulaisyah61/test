@@ -45,6 +45,7 @@ export const ItemStatus = styled.div`
   margin:  auto;
   padding: 5px;
   border-radius: 5px;
+  font-size: 12px;
   &.success {
     background: ${green};
   }

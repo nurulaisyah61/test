@@ -9,7 +9,8 @@ class App extends React.Component {
     super();
     this.state ={
       value: '',
-      items: []
+      items: [],
+      filtered: []
     }
   }
 
@@ -20,19 +21,38 @@ class App extends React.Component {
     })
 
     this.setState({
-      items: items
+      items: items,
+      filtered: items
     })
     
   }
 
   onSearch = (event) => {
+    const {items} = this.state;
+    let value = event.target.value.toLowerCase();
     this.setState({
       value: event.target.value
     })
+
+    let newList = []
+
+    if (value !== "") {
+      let currentList = items;
+      newList = currentList.filter(item => {
+        const lc = item.beneficiary_name.toLowerCase();
+        return lc.includes(value);
+      });
+    } else {
+      newList = items;
+    }
+      
+    this.setState({
+      filtered: newList
+    });
   }
 
   render(){
-    const { value, items } = this.state;
+    const { value, filtered } = this.state;
 
     return (
       <Wrapper>
@@ -42,7 +62,7 @@ class App extends React.Component {
           placeholder='Cari nama' 
           value={value} 
         />
-        <ListItem items={items} />
+        <ListItem items={filtered} />
       </Wrapper>
     );
   }
